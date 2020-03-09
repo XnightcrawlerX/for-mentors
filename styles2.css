@@ -1,0 +1,148 @@
+@media(max-width:550px){
+    .container{
+        display: grid;
+        border: thin solid black;
+        height: 100vh;
+        width: 100vw;
+        grid-template-rows: 7% auto 0px
+    }
+    div > .header{
+        display: grid;
+        border: thin solid pink;
+        grid-template-areas: "menus logo";
+        grid-template-columns: repeat(2, 15vw);
+        grid-gap: 25%;
+    }
+    div > .empty{
+        display: none;
+    }
+
+    div > .menus{
+        grid-area: menus;
+    }
+    div > .logo{
+        grid-area: logo;
+    }
+    div > .main{
+        display: flex;
+        border: thin solid red;
+    }
+    div>.flex-main-content-box{
+        background: transparent;
+        padding-top: 10vh;
+        flex-direction: column;
+        margin: 0 auto;
+        border: thin solid blueviolet;
+    }
+    form{
+        border: thin solid black;
+        font-size: small;
+    }
+    input{
+        border: thin solid springgreen;
+    }
+    div>.footer{
+    }
+}
+/* normal browser */
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 7% auto
+}
+.header{
+    width: 100%;
+    display: grid;
+    background-color: #f1f1f1;
+    flex-direction: row;
+    grid-template-columns: 15vw auto 40vw;
+}
+.logo{
+    background: url('https://pixabay.com/get/57e5d24b485aa514f1dc84608229327a1637dce05a4c704c7d2c7ed5904dc558/dragon-1578289_640.png');
+    background-position: center;
+    width: 60px;
+
+}
+.menus{
+    display: flex;
+    flex-direction: row;
+    border: thin solid silver;
+}
+.submit-button {
+    width: 100%;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+    font-size:15px;
+	padding:1px 0px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #134685;
+    text-align: center;
+}
+.submit-button:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.submit-button:active {
+	position:relative;
+    top:1px;
+}
+.btn{
+    height: 50%;
+    width: min-content;
+    margin-top: auto;
+    border: none;
+    background-color: inherit;
+    font-size:16px;
+    cursor: pointer;
+}
+.extra-login{
+    display: block;
+    margin-left: auto;
+    border: thin solid black;
+}
+.extra{
+    height: 50%;
+    width: min-content;
+    padding-top: 20%;
+    border: none;
+    background-color: inherit;
+    font-size: 10px;
+    cursor: pointer;
+}
+/*on mouse-over */
+.btn:hover{background: #eee;}
+
+.main{
+    background: url('https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* I WANT TO EDI THIS TO LOOK LIKE -> https://www.airbnb.com/*/
+.input-box{
+    position: absolute;
+    border: thin solid black;
+    height: 62%;
+    width: 30%;
+    left: 58%;
+    top: 32%;
+    background-color: white;
+}
+
+.input-box input{
+    margin-top: 10px;
+    width: 95%;
+    height: 50px;
+}
+
+.test{
+    display: none;
+}
